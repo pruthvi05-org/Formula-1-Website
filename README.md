@@ -210,7 +210,7 @@ Contributions are welcome.
 
 ## 👨‍💻 Author
 
-### Pruthviraj Rana
+### Pruthvirajsinh Rana
 
 GitHub: https://github.com/pruthvi05-org
 
