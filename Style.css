@@ -28,7 +28,7 @@ body{ color: white; font-family: calibri, sans-serif; font-size: 30px; text-alig
 
 .gp-roadmap {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px 50px;   /* row-gap column-gap */
     width: 90%;
     max-width: 1000px;
@@ -50,4 +50,38 @@ body{ color: white; font-family: calibri, sans-serif; font-size: 30px; text-alig
 .p.gp{
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.team_logo{
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.team-logos img:hover{
+    transform: scale(1.25);
+
+}
+
+.team-logos {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px 20px;   /* row-gap column-gap */
+    width: 90%;
+    max-width: 1000px;
+    margin-left: 40px;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.team-card {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:small;
+    font-style:bold;
+}
+
+.audi{
+    grid-column:3;
+    grid-row:3;
 }
