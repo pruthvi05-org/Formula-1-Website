@@ -125,6 +125,11 @@ body { background:
     border-radius: 30px;
 }
 
+gp-card:grid{
+    display:grid;
+    grid-template-columns:repeat(1200px,maxmin)
+}
+
 .gp-card img:hover {
     transform: scale(1.05);
 }
@@ -147,13 +152,20 @@ body { background:
 
 .team-logos {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 20px 20px;   /* row-gap column-gap */
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 5px;
     width: 90%;
     max-width: 1000px;
     margin-left: 40px;
     margin-right: auto;
     margin-top: 20px;
+    background:rgba(20,20,20,.75);
+    backdrop-filter:blur(8px);
+    padding:50px;
+    border-radius:20px;
+    margin:30px;
+    border-left:5px solid #ff1500;
+    transition:35s;
 }
 
 .team-card {
@@ -166,4 +178,41 @@ body { background:
 .audi{
     grid-column:3;
     grid-row:3;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 24px;
+    background:#ff1801;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:white;
+    color:#ff1801;
+    transform:scale(1.05);
+}
+
+.hero{
+    height: 100vh;          /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 70px;
+    color: #FF1801;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 22px;
+    max-width: 700px;
+    color: white;
 }
